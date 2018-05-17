@@ -1,8 +1,0 @@
----
-
-- hosts: all
-  become: yes
-  tasks:
-#    - include: install_zabbix.yaml
-#    - include: install_mysql.yaml
-#    - include: start_services.yaml
