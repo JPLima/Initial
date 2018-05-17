@@ -1,0 +1,10 @@
+---
+
+- hosts: deb
+  become: yes
+
+  tasks:
+    - name: Lista file
+      debug: msg={{ item }}
+      with_file:
+       - lista.txt

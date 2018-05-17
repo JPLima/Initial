@@ -1,0 +1,10 @@
+---
+
+- hosts: deb
+  become: yes
+
+  tasks:
+    - name: Sequencia
+      debug: msg="Sequence is {{ item }}"
+      with_sequence: start=0 end=10
+ 

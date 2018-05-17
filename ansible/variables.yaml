@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    - var1: Johnata
+    - var2: Lima
+
+  tasks:
+    - name: Running vars
+      shell: echo "{{var1}} {{var2}}" >> /home/vars.txt
+

@@ -1,0 +1,9 @@
+---
+
+- include: /etc/ansible/include_upgrade.yaml
+
+- hosts: all
+  become: yes
+  tasks:
+    - include: /etc/ansible/include_apache.yaml
+

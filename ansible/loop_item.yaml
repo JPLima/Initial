@@ -1,0 +1,12 @@
+---
+
+- hosts: ubuntu
+  become: yes
+  
+  tasks:
+    - name: Install item list 
+      apt: name={{ item }} state=latest
+      with_items:
+       - apache2 
+       - php
+       - mysql-server

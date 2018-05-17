@@ -1,0 +1,10 @@
+---
+
+- hosts: deb
+  become: yes
+  tasks:
+    - name: Teste  Playbook
+      shell: echo "Primeiro playbook" > /home/texto.txt
+
+    - name: Teste Playbook 2
+      shell: echo "Funcionou tambem" >>/home/texto.txt

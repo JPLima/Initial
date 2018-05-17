@@ -1,0 +1,11 @@
+---
+
+- hosts: ubuntu
+  become: yes
+  tasks:
+  - name: Archive
+    unarchive:
+      src: /usr/share/doc/zabbix-server-mysql/create.sql.gz
+      dest: /home/nugget1
+      remote_src: yes
+
